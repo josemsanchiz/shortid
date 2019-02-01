@@ -1,7 +1,7 @@
 {
   "name": "shortid-extend",
-  "version": "0.0.1",
-  "description": "Alternative versión with options from DylanG ShortId",
+  "version": "0.0.3",
+  "description": "Alternative versión with options from Dylan Greene ShortId",
   "main": "index.js",
   "scripts": {
     "build": "grunt build",
@@ -20,8 +20,8 @@
   ],
   "homepage": "https://github.com/josemsanchiz/shortid-extend",
   "author": {
-    "name": "Dylan Greene",
-    "email": "dylang@gmail.com"
+    "name": "Jose Miguel Sánchiz",
+    "email": "josem.sanchiz@gmail.com"
   },
   "repository": {
     "type": "git",
