@@ -1,6 +1,6 @@
 {
   "name": "shortid-extend",
-  "version": "2.2.14",
+  "version": "0.0.1",
   "description": "Alternative versión with options from DylanG ShortId",
   "main": "index.js",
   "scripts": {
@@ -18,14 +18,14 @@
     "shortid",
     "tinyid"
   ],
-  "homepage": "https://github.com/dylang/shortid",
+  "homepage": "https://github.com/josemsanchiz/shortid-extend",
   "author": {
     "name": "Dylan Greene",
     "email": "dylang@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dylang/shortid.git"
+    "url": "https://github.com/josemsanchiz/shortid-extend.git"
   },
   "browser": {
     "./lib/random/random-byte.js": "./lib/random/random-byte-browser.js",
