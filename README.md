@@ -11,7 +11,11 @@
 
 ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.
 
+** NEW FUNCTIONALITY ** 
+The module have now a config method for override the default settings for the alphabet and the default generated ID Length. IF you configure the module for have this config object overrides the default configuration and have the capability of sets the desired ID lenght also your desired alphabet lenght.
+
  * By default 7-14 url-friendly characters: `A-Z`, `a-z`, `0-9`, `_-`
+ * **NEW** 
  * Supports `cluster` (automatically), custom seeds, custom alphabet.
  * Can generate any number of ids without duplicates, even millions per day.
  * Perfect for games, especially if you are concerned about cheating so you don't want an easily guessable id.
@@ -107,6 +111,24 @@ var shortid = require('shortid');
 ```
 
 ---------------------------------------
+#### `shortid.config(object)`
+
+__Params__ `boolean` disableDefaultAlphabetLength: Disables the default characters length setting.
+__Params__ `boolean` disableDefaultIdLength: Disables the default generated ID Length.
+__Params__ `number` idLength: **REQUIRED IF disableDefaultIdLength sets to true** Desired ID Length.
+
+__Example__
+
+```js
+shortid.config({
+  disableDefaultAlphabetLength: true,
+  disableDefaultIdLength: true,
+  idLength: 6
+})
+
+```
+
+---------------------------------------
 
 #### `shortid.generate()`
 
@@ -136,7 +158,11 @@ __Optional__
 
 Change the characters used.
 
-You must provide a string of all 64 unique characters. Order is not important.
+You must provide a string of all 64 unique characters. Order is not important. (You can overwrite this setting with config object)
+
+
+
+If you sets 
 
 The default characters provided were selected because they are url safe.
 
