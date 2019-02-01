@@ -1,7 +1,7 @@
 {
-  "name": "shortid",
+  "name": "shortid-extend",
   "version": "2.2.14",
-  "description": "Amazingly short non-sequential url-friendly unique id generator.",
+  "description": "Alternative versión with options from DylanG ShortId",
   "main": "index.js",
   "scripts": {
     "build": "grunt build",
