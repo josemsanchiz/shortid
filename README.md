@@ -114,7 +114,9 @@ var shortid = require('shortid');
 #### `shortid.config(object)`
 
 __Params__ `boolean` disableDefaultAlphabetLength: Disables the default characters length setting.
+
 __Params__ `boolean` disableDefaultIdLength: Disables the default generated ID Length.
+
 __Params__ `number` idLength: **REQUIRED IF disableDefaultIdLength sets to true** Desired ID Length.
 
 __Example__
